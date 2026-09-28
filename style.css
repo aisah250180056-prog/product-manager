@@ -5,8 +5,8 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background: #0f172a;
-    color: #e5e7eb;
+    background: #f4f7fb;
+    color: #14213d;
 }
 
 .container {
@@ -19,7 +19,12 @@ body {
     max-width: 720px;
 }
 
+/* Header */
 .hero {
+    background: #0b1f3a;
+    color: white;
+    padding: 32px;
+    border-radius: 18px;
     margin-bottom: 28px;
 }
 
@@ -28,7 +33,7 @@ body {
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 1px;
-    color: #67e8f9;
+    color: #ffffff;
     margin-bottom: 8px;
 }
 
@@ -39,24 +44,26 @@ h1 {
 
 h2 {
     margin: 0 0 6px;
+    color: #0b1f3a;
 }
 
 h3 {
     margin: 16px 0 8px;
     font-size: 21px;
+    color: #0b1f3a;
 }
 
 p {
-    color: #aab4c5;
+    color: #526173;
     line-height: 1.6;
 }
 
+/* Panel */
 .panel,
 .card,
-.reflection,
 .empty {
-    background: #172033;
-    border: 1px solid #2b3952;
+    background: #ffffff;
+    border: 1px solid #dbe3ee;
     border-radius: 18px;
 }
 
@@ -73,6 +80,7 @@ p {
     margin: 0;
 }
 
+/* Form */
 .product-form {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -85,22 +93,24 @@ p {
     gap: 7px;
     font-weight: 700;
     font-size: 14px;
+    color: #0b1f3a;
 }
 
 input {
     width: 100%;
-    border: 1px solid #3b4a64;
+    border: 1px solid #c8d3e1;
     border-radius: 10px;
     padding: 12px 13px;
-    background: #0d1525;
-    color: #fff;
+    background: #ffffff;
+    color: #14213d;
     outline: none;
 }
 
 input:focus {
-    border-color: #67e8f9;
+    border-color: #0b1f3a;
 }
 
+/* Tombol */
 .product-form .btn {
     align-self: end;
 }
@@ -111,23 +121,36 @@ input:focus {
     border-radius: 9px;
     padding: 10px 14px;
     text-decoration: none;
-    color: #fff;
+    color: #ffffff;
     font-weight: 700;
     cursor: pointer;
 }
 
 .primary {
-    background: #2563eb;
+    background: #0b1f3a;
+}
+
+.primary:hover {
+    background: #163b68;
 }
 
 .edit {
-    background: #334155;
+    background: #163b68;
+}
+
+.edit:hover {
+    background: #0b1f3a;
 }
 
 .danger {
-    background: #dc2626;
+    background: #c62828;
 }
 
+.danger:hover {
+    background: #a61f1f;
+}
+
+/* Tombol Edit dan Hapus */
 .actions {
     display: flex;
     gap: 8px;
@@ -138,6 +161,7 @@ input:focus {
     margin: 0;
 }
 
+/* Daftar Produk */
 .cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -160,20 +184,18 @@ input:focus {
     font-size: 12px;
     padding: 5px 8px;
     border-radius: 999px;
-    background: #26344c;
+    background: #e8eef6;
+    color: #0b1f3a;
 }
 
 .price {
-    color: #67e8f9;
+    color: #0b1f3a;
     font-size: 22px;
     font-weight: 800;
     margin: 4px 0 0;
 }
 
-.empty-stock {
-    background: #5b2630;
-}
-
+/* Pesan */
 .alert {
     padding: 13px 16px;
     border-radius: 10px;
@@ -182,41 +204,35 @@ input:focus {
 }
 
 .alert.success {
-    background: #164e3b;
-    color: #a7f3d0;
+    background: #e8f5e9;
+    color: #1b5e20;
 }
 
 .alert.error {
-    background: #5b2630;
-    color: #fecaca;
+    background: #ffebee;
+    color: #b71c1c;
 }
 
 .empty {
     padding: 28px;
     text-align: center;
+    color: #526173;
 }
 
-.reflection {
-    padding: 20px;
-    margin-top: 34px;
-    border-color: #0e7490;
-}
-
-.reflection h2 {
-    color: #67e8f9;
-}
-
-code {
-    color: #fbbf24;
-}
-
+/* Tombol kembali */
 .back {
     display: inline-block;
-    color: #67e8f9;
+    color: #0b1f3a;
     text-decoration: none;
+    font-weight: 700;
     margin-bottom: 18px;
 }
 
+.back:hover {
+    text-decoration: underline;
+}
+
+/* Tampilan HP */
 @media (max-width: 800px) {
     .cards {
         grid-template-columns: repeat(2, 1fr);
@@ -236,5 +252,9 @@ code {
 
     .panel {
         padding: 18px;
+    }
+
+    .hero {
+        padding: 24px;
     }
 }
